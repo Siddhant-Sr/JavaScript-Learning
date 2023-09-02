@@ -39,3 +39,24 @@ const myFunction = function(){
 }
 
 console.log(typeof myFunction);
+
+
+
+//  Stack and Heap Memory
+//Stack : Primitive //whenever stack memory is used we get copy of that data
+// Heap : non primitive //whenever heap memory is used we get refernce of the data
+
+let myName = "siddhu"
+let otherName = "Siddhant"
+otherName = "Sri"
+
+let UserOne = {
+    email: "abkc@gmail.com",
+    phone: 9643
+}
+
+let UserTwo = UserOne
+
+UserTwo.phone = 465312  //referencing toward userOne so if we change value using userTwo then userOne will also change
+
+console.log(UserOne);
