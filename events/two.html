@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur JavaScript</h1>
+    <button id="stop">Stop</button>
+
+
+    <script>
+        const sayMyName = function(){
+            console.log("Siddhant");
+        }
+
+        const changeText = function(){
+            document.querySelector('h1').innerHTML="Learn Javascript"
+        }
+       const stopme =  setTimeout(changeText, 2000)
+        // to remove setTime out we will use clearTimeout()
+
+        document.querySelector('#stop').addEventListener('click', ()=>{
+            clearTimeout(stopme)
+        })
+    </script>
+</body>
+</html>
